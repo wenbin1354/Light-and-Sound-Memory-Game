@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1 >Light and Sound Memory Game</h1>
+
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing the buttons. Each time you successfully repeat a pattern you get extra 30 secs to complete the game.
+    </p>
+    
+    <h2>
+       <div class= "title" id= "countdown">
+      The timer starts when you start the game
+    </div>
+    </h2>
+   
+   
+
+    
+    <button onclick="startGame(), startTimer()" id="startBtn">
+      Start
+    </button>
+    <button onclick="stopGame()" class = "hidden" id="stopBtn">
+      Stop
+    </button>
+    
+    <div id="gameButtonArea">
+      <button onclick="guess(1)" onmousedown="startTone(1), toggleImage1()" onmouseup="stopTone(), toggleImage1()" id="button1">
+        <img src="https://cdn.glitch.global/5dd3c33b-2b17-4992-a65a-0d4569a2c404/do.jpg?v=1647224383292" id="image1" width="100" height="100" class="hidden">
+      </button>
+      <button onclick="guess(2)" onmousedown="startTone(2), toggleImage2()" onmouseup="stopTone(), toggleImage2()" id="button2">
+        <img src="https://cdn.glitch.global/5dd3c33b-2b17-4992-a65a-0d4569a2c404/re.jpg?v=1647224384609" id="image2" width="100" height="100" class="hidden">
+      </button>
+      <button onclick="guess(3)" onmousedown="startTone(3), toggleImage3()" onmouseup="stopTone(), toggleImage3()" id="button3">
+        <img src="https://cdn.glitch.global/5dd3c33b-2b17-4992-a65a-0d4569a2c404/mi.jpg?v=1647224386230" id="image3" width="100" height="100" class="hidden">
+      </button>
+      <button onclick="guess(4)" onmousedown="startTone(4), toggleImage4()" onmouseup="stopTone(), toggleImage4()" id="button4">
+        <img src="https://cdn.glitch.global/5dd3c33b-2b17-4992-a65a-0d4569a2c404/fa.jpg?v=1647224388144" id="image4" width="100" height="100" class="hidden">
+      </button>
+      <button onclick="guess(5)" onmousedown="startTone(5), toggleImage5()" onmouseup="stopTone(), toggleImage5()" id="button5">
+        <img src="https://cdn.glitch.global/5dd3c33b-2b17-4992-a65a-0d4569a2c404/sol.jpg?v=1647224390029" id="image5" width="100" height="100" class="hidden">
+      </button>
+      
+      
+      
+    </div>
+    
+    
+
+  </body>
+</html>
